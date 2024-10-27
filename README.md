@@ -161,4 +161,3 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
         # Add custom logic or event connections here
 ```
-# candy-dispenser-pyqt5-template
