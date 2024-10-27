@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+
+# Virtual environment
+venv/
+
+# Qt Designer files
+*.ui
+*.qrc
+
+# IDE settings
+.vscode/
+.idea/
+*.iml
+
+# Linux specific files
+*~
+
+# Archive files
+*.zip
+*.tar.gz
+*.tar.bz2
