@@ -133,7 +133,7 @@ git clone https://github.com/yourusername/candy-dispenser-pyqt5-template.git && 
 
 1. **UI Files**: Design or modify UI layouts using Qt Designer and save them as `.ui` files in the `ui/` directory.
 2. **Generated UI Code**: After creating or modifying `.ui` files, run the `pyuic5` command to update the generated Python files.
-3. **Subclassing the Generated Code**: Instead of modifying `ui_generated.py`, create a subclass in `main.py` or another file to add custom behaviors and event handling, ensuring the original generated code remains unmodified.
+3. **Subclassing the Generated Code**: Instead of modifying `ui_generated.py`, use the a subclass in `main.py` or another file to add custom behaviors and event handling, ensuring the original generated code remains unmodified.
 
 ### Having trouble setting up?
 
@@ -147,17 +147,4 @@ If you run into any issues while using this template, please follow these steps 
 
 Following these steps will streamline the support process and help ensure you receive accurate assistance.
 
-### Example Subclassing Pattern
-
-In `main.py`, you can create a subclass of the generated UI class as follows:
-
-```python
-from PyQt5.QtWidgets import QMainWindow
-from ui.ui_generated import Ui_MainWindow  # Import the generated UI class
-
-class MainWindow(QMainWindow, Ui_MainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setupUi(self)
-        # Add custom logic or event connections here
-```
+Happy hacking!
